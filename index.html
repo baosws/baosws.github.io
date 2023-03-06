@@ -96,6 +96,12 @@
             <div class="row">
               <div class="col-12 col-sm-6">
                 <div class="meta">
+                {% if conf.rank %}
+                  <div class="rank">
+                      <b>Rank: </b>
+                    <a href="http://portal.core.edu.au/conf-ranks/?search={{conf.title}}&by=all&source=CORE2021&sort=atitle&page=1">{{conf.rank}}</a>.
+                  </div>
+                {% endif %}
                   <span class="conf-date">{{conf.date}}.</span>
                   <span class="conf-place">
                     {% if conf.place == "Online" %}

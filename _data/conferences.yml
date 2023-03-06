@@ -10,6 +10,7 @@
   start: 2023-06-18
   end: 2023-06-23
   sub: ML
+  rank: B
 
 - title: ICME
   year: 2023
@@ -22,6 +23,7 @@
   start: 2023-07-10
   end: 2023-07-14
   sub: ML
+  rank: A
 
 - title: ACMMM
   year: 2023
@@ -36,6 +38,7 @@
   end: 2023-11-03
   sub: CV
   note: Mandatory abstract deadline on April 23, 2023.
+  rank: A*
 
 - title: CLeaR
   year: 2023
@@ -62,6 +65,7 @@
   end: 2023-10-05
   sub: ML
   note: Mandatory abstract deadline on May 02, 2023. More info <a href='https://ecai2023.eu/ECAI2023'>here</a>.
+  rank: A
 
 - title: NeurIPS
   year: 2023
@@ -77,6 +81,7 @@
   hindex: 278
   sub: ML
   note: Mandatory abstract deadline on May 11, 2023
+  rank: A*
 
 - title: CoLLAs
   year: 2023
@@ -103,6 +108,7 @@
   start: 2023-07-31
   end: 2023-08-04
   sub: ML
+  rank: A
 
 - title: IJCAI
   year: 2023
@@ -117,6 +123,7 @@
   hindex: 120
   sub: ML
   note: Mandatory abstract deadline on Jan 11, 2023, and supplementary material deadline on Jan 23, 2023. More info <a href='https://ijcai-23.org/'>here</a>.
+  rank: A*
 
 - title: ICML
   year: 2023
@@ -130,6 +137,7 @@
   end: 2023-07-29
   hindex: 204
   sub: ML
+  rank: A*
   
 - title: SIGIR
   year: 2023
@@ -145,6 +153,7 @@
   hindex: 66
   sub: DM
   note: Mandatory abstract deadline on January 24, 2023. More info <a href='https://sigir.org/sigir2023/call-for-full-papers/'>here</a>.
+  rank: A*
 
 - title: PAKDD
   year: 2023
@@ -158,6 +167,7 @@
   end: 2023-05-28
   hindex: 29
   sub: DM
+  rank: A
 
 - title: AISTATS
   year: 2023
@@ -172,6 +182,7 @@
   hindex: 85
   sub: ML
   note: Mandatory abstract deadline on Oct 6, 2022. More info <a href='https://aistats.org/aistats2023/call-for-papers.html'>here</a>.
+  rank: A
 
 - title: ICLR
   year: 2023
@@ -187,6 +198,7 @@
   hindex: 286
   sub: ML
   note: Mandatory abstract deadline on September 21, 2022. More info <a href='https://iclr.cc/Conferences/2023/CallForPapers'>here</a>.
+  rank: A*
 
 - title: ACML
   year: 2022
@@ -215,6 +227,7 @@
   end: 2023-02-14
   hindex: 95
   sub: ML
+  rank: A*
 
 - title: ICDM
   year: 2022
@@ -230,6 +243,7 @@
   hindex: 124.0
   sub: DM
   note: Paper submissions limited to ten (10) pages, in the IEEE 2-column format | <a href="https://icdm22.cse.usf.edu/key-dates.html"> Key Dates</a> | <a href="https://icdm22.cse.usf.edu/calls/Papers.html">Call for Papers </a>
+  rank: A*
 
 - title: WSDM
   year: 2023
@@ -358,6 +372,7 @@
   hindex: 78
   sub: CV
   note: More info <a href='https://conferences.miccai.org/2023/'>here</a>.
+  rank: A
 
 - title: ICCV
   year: 2023
@@ -372,6 +387,7 @@
   hindex: 239
   sub: CV
   note: Supplementary deadline on Mar 15, 2023. More info <a href='http://iccv2023.thecvf.com/home'>here</a>.
+  rank: A*
 
 - title: WACV
   year: 2023
@@ -425,9 +441,10 @@
   start: 2023-12-01
   end: 2023-12-04
   sub: [ML, DM]
-  note: 
+  note: Mandatory abstract deadline on July 01, 2023.
+  rank: A*
  
-- title: ECML/PKDD
+- title: ECML PKDD
   year: 2023
   id: ecmlpkdd23  # title as lower case + last two digits of year
   full_name: European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases # full conference name
@@ -441,3 +458,4 @@
   end: 2023-09-22
   sub: [ML, DM]
   note: Check the conference website for workshop and demo deadlines
+  rank: A
