@@ -82,6 +82,7 @@
   year: 2023
   id: collas23
   link: https://lifelong-ml.cc
+  abstract_deadline: '2023-03-09 23:59:59'
   deadline: '2023-03-13 23:59:59'
   timezone: UTC-12
   place: Montreal, Canada
@@ -412,7 +413,7 @@
   hindex: 114
   sub: DM
 
-- title: ICDM 2023
+- title: ICDM
   year: 2023
   id: icdm23
   link: http://www.cloud-conf.net/icdm2023/index.html
@@ -423,7 +424,7 @@
   date: December 1-4, 2023
   start: 2023-12-01
   end: 2023-12-04
-  sub: DM
+  sub: [ML, DM]
   note: 
  
 - title: ECML/PKDD
@@ -438,5 +439,5 @@
   date: September, 18-22, 2023
   start: 2023-09-18
   end: 2023-09-22
-  sub: ML
+  sub: [ML, DM]
   note: Check the conference website for workshop and demo deadlines

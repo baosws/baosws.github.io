@@ -177,10 +177,11 @@
           // adjust date according to deadline timezone
           var timezone = {% if conf.timezone %}"{{conf.timezone}}" {% else %} "America/New_York" {% endif %};
           var confDate = moment.tz("{{conf.deadline}}", timezone);
+          var timerDate = moment.tz({% if conf.abstract_deadline %}"{{conf.abstract_deadline}}" {% else %} "{{conf.deadline}}" {% endif %}, timezone);
 
           // render countdown timer
-          $('#{{conf.id}} .timer').countdown(confDate.toDate(), function (event) {
-              $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          $('#{{conf.id}} .timer').countdown(timerDate.toDate(), function (event) {
+              $(this).html(event.strftime('%D days %Hh %Mm %Ss') + {% if conf.abstract_deadline %}" (Abstract)"{% else %}""{% endif %});
           });
 
           // render countdown timer small
