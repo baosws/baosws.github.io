@@ -187,7 +187,7 @@
 
           // render countdown timer
           $('#{{conf.id}} .timer').countdown(timerDate.toDate(), function (event) {
-              $(this).html(event.strftime('%D days %Hh %Mm %Ss') + {% if conf.abstract_deadline %}" (Abstract)"{% else %}""{% endif %});
+              $(this).html({% if conf.abstract_deadline %}"Abstract: "{% else %}""{% endif %} + event.strftime('%D days %Hh %Mm %Ss') );
           });
 
           // render countdown timer small
