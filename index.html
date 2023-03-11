@@ -183,12 +183,27 @@
           // adjust date according to deadline timezone
           var timezone = {% if conf.timezone %}"{{conf.timezone}}" {% else %} "America/New_York" {% endif %};
           var confDate = moment.tz("{{conf.deadline}}", timezone);
-          var timerDate = moment.tz({% if conf.abstract_deadline %}"{{conf.abstract_deadline}}" {% else %} "{{conf.deadline}}" {% endif %}, timezone);
+          var timerDate = confDate;
+          var show_abstract = false;
+          {% if conf.abstract_deadline %}
+            var absTimer = moment.tz("{{conf.abstract_deadline}}", timezone);
+            if (moment().diff(absTimer) < 0) {
+              timerDate = absTimer;
+              show_abstract = true;
+            }
+          {% endif %}
 
           // render countdown timer
-          $('#{{conf.id}} .timer').countdown(timerDate.toDate(), function (event) {
-              $(this).html({% if conf.abstract_deadline %}"Abstract: "{% else %}""{% endif %} + event.strftime('%D days %Hh %Mm %Ss') );
-          });
+          if (show_abstract) {
+            $('#{{conf.id}} .timer').countdown(timerDate.toDate(), function (event) {
+                $(this).html("Abstract: " + event.strftime('%D days %Hh %Mm %Ss') );
+            });
+          }
+          else {
+            $('#{{conf.id}} .timer').countdown(timerDate.toDate(), function (event) {
+                $(this).html(event.strftime('%D days %Hh %Mm %Ss') );
+            });
+          }
 
           // render countdown timer small
           $('#{{conf.id}} .timer-small').countdown(confDate.toDate(), function (event) {
