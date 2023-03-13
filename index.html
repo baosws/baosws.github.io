@@ -206,9 +206,16 @@
           }
 
           // render countdown timer small
-          $('#{{conf.id}} .timer-small').countdown(confDate.toDate(), function (event) {
-              $(this).html(event.strftime('%Dd %H:%M:%S'));
-          });
+          if (show_abstract) {
+            $('#{{conf.id}} .timer-small').countdown(timerDate.toDate(), function (event) {
+                $(this).html("A: " + event.strftime('%Dd %H:%M:%S'));
+            });
+          }
+          else {
+            $('#{{conf.id}} .timer-small').countdown(timerDate.toDate(), function (event) {
+                $(this).html(event.strftime('%Dd %H:%M:%S'));
+            });
+          }
 
           // convert deadline to local timezone
           try {
